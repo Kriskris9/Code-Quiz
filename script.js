@@ -5,39 +5,42 @@ let count = 100
 let finalScore = ''
 let timer;
 let questionsIndex = 0
-const questions = [
+let questions = [
     {
-      question: "Commonly used data types DO Not Include:",
-      answers: ["string", "Booleans", "Alerts", "Numbers"],
-      correctAnswer: "Alerts"
+        questions: "Commonly used data types DO Not Include:",
+        answers: ["string", "Booleans","Alerts", "Numbers"],
+        correctAnswer:"Alerts"
     },
     {
-      question: "The condition in an if/else statement is enclosed with _____",
-      answers: ["quotes", "curly brackets", "parenthesis", "square brackets"],
-      correctAnswer: "parenthesis"
+        questions: " The condition in an if/else statement is enclosed with _____ ",
+        answers: ["quotes", " curly brackets", "parenthesis","square brackets"],
+        correctAnswer:"quotes"
     },
     {
-      question: "Arrays in JavaScript can be used to store_____",
-      answers: ["numbers and strings", "other arrays", "booleans", "all of the above"],
-      correctAnswer: "all of the above"
+        questions: "Arrays in JavaScript can be used to store_____ ",
+        answers: ["numbers and strings","other arrays", "booleans","all of the above"],
+        correctAnswer:"all of the above"
     },
     {
-      question: "String values must be enclosed within __ when being assigned to variables",
-      answers: ["commas", "curly brackets", "quotes", "parenthesis"],
-      correctAnswer: "quotes"
+        questions: " String values must be enclosed within __ when being assigned to variables",
+        answers: ["commas","curly brackets","quotes", "parenthesis"],
+        correctAnswer:"comma"
     },
+
     {
-      question: "A very useful tool used during development and debugging for printing content to the debugger is:",
-      answers: ["JavaScript", "terminal/bash", "for loops", "console.log"],
-      correctAnswer: "console.log"
-    }
-  ];
+        questions: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        answers: ["JavaScript", "terminal/bash","for loops","console.log"],
+        correctAnswer:"console.log"
+    },
+
+];
+
 function timerCountdown() {
 
     timer = setInterval(function () {
         count--;
         time.textContent = count
-        if (count <= 0) {
+        if (count === 0) {
        
             finish();
 
@@ -85,11 +88,10 @@ function answerQuestion(answer) {
 
  
     }
-    questionsIndex ++
+    questionsIndex ++;
     loadQuestions()
 }
 
 function finish() {
     clearInterval(timer);
 }
-  console.log(1)
