@@ -1,10 +1,10 @@
 let buttons = document.querySelectorAll('.answer-item');
-let time = document.getElementsByClassName('.time');
+let finalScoreEl=document.getElementById( 'final-score')
+let time = document.getElementById('time');
 let welcomePage = document.getElementById('section-1');
 let highScore = document.getElementById('results-page');
 let questionPage = document.getElementById('question-page');
 let count = 100;
-let finalScore = '';
 let timer;
 let questionsIndex = 0;
 let questions = [
@@ -60,7 +60,7 @@ function startQuiz() {
 }
 
 function loadQuestions() {
-  if (questionsIndex >= questions.length) {
+  if (questionsIndex >=questions.length) {
     finish();
     // quiz is done.
   }
@@ -97,5 +97,12 @@ function finish() {
 function ScoreSection() {
   // if you finish before the time ends let final score equal time left.
   // questionPage.setAttribute("style", "display:none")
+  if (count < 0)
+{count = 0
+
+}
+finalScoreEl.innerText= count;
 console.log(count);
 }
+
+
