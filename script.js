@@ -44,7 +44,6 @@ function timerCountdown() {
         time.textContent = count
         // console.log(buttons)
         if (count === 0) {
-       
     finish();
 
         }
@@ -80,15 +79,11 @@ function loadQuestions() {
         //     const clickedElement = event.target
         //     const lianswer = event.target.innerHTML
         //     answerQuestion(event.target.innerHTML)
-          
         // });
     
 
     });
 }
-
-
-
 
 function answerQuestion(answer) {
     const question = questions[questionsIndex]
