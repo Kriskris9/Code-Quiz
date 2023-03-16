@@ -3,7 +3,7 @@ let finalScoreEl=document.getElementById( 'final-score')
 let time = document.getElementById('time');
 let welcomePage = document.getElementById('section-1');
 let highScore = document.getElementById('results-page');
-let questionPage = document.getElementById('question-page');
+let questionPage = document.getElementById('quiz-questions');
 let count = 100;
 let timer;
 let questionsIndex = 0;
@@ -96,7 +96,8 @@ function finish() {
 
 function ScoreSection() {
   // if you finish before the time ends let final score equal time left.
-  // questionPage.setAttribute("style", "display:none")
+  questionPage.setAttribute("style", "display:none")
+  highScore.setAttribute("style", "display:block")
   if (count < 0)
 {count = 0
 

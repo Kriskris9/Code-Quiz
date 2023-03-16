@@ -40,3 +40,8 @@
   .space-between{
     justify-content:space-between;
   }
+
+
+#results-page {
+display:none;
+}
