@@ -72,7 +72,9 @@ function loadQuestions() {
 
   question.answers.forEach((answer) => {
     var li = document.createElement('li');
-    li.innerHTML = answer;
+    var button =document.createElement('button')
+    li.appendChild(button)
+    button.innerHTML = answer;
     li.classList.add('answer-item');
     document.getElementById('answers').appendChild(li);
 

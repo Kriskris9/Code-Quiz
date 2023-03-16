@@ -45,3 +45,16 @@
 #results-page {
 display:none;
 }
+
+#answers {
+  display:flex;
+  justify-content: center;
+
+}
+
+#answers li {
+  list-style:none; 
+}
+.answer-item button {
+  margin-left: 20px;
+}
