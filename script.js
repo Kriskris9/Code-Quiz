@@ -107,5 +107,3 @@ function ScoreSection() {
 finalScoreEl.innerText= count;
 console.log(count);
 }
-
-
