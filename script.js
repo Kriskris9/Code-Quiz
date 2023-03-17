@@ -1,5 +1,5 @@
-let buttons = document.querySelectorAll('.answer-item');
-let finalScoreEl=document.getElementById( 'final-score')
+var buttons = document.querySelectorAll('.answer-item');
+var finalScoreEl = document.getElementById('final-score')
 let time = document.getElementById('time');
 let welcomePage = document.getElementById('section-1');
 let highScore = document.getElementById('results-page');
@@ -60,7 +60,7 @@ function startQuiz() {
 }
 
 function loadQuestions() {
-  if (questionsIndex >=questions.length) {
+  if (questionsIndex >= questions.length) {
     finish();
     // quiz is done.
   }
@@ -72,7 +72,7 @@ function loadQuestions() {
 
   question.answers.forEach((answer) => {
     var li = document.createElement('li');
-    var button =document.createElement('button')
+    var button = document.createElement('button')
     li.appendChild(button)
     button.innerHTML = answer;
     li.classList.add('answer-item');
@@ -97,13 +97,25 @@ function finish() {
 }
 
 function ScoreSection() {
+  let initials = document.getElementById('initials');
   // if you finish before the time ends let final score equal time left.
   questionPage.setAttribute("style", "display:none")
   highScore.setAttribute("style", "display:block")
-  if (count < 0)
-{count = 0
+  if (count < 0) {
+    count = 0
+
+  }
+  finalScoreEl.innerText = count;
+  console.log(count);
+
+  // var submitButton = document.getElementById("Submit");
+  // submitButton.addEventListener('click', function () {
+  //   var nameInitial= initials.value.trim();
+
+    
+  
+
+  });
 
 }
-finalScoreEl.innerText= count;
-console.log(count);
-}
+

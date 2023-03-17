@@ -28,7 +28,4 @@ Please refer to the license in the repo.
 
 ## Deployment
 
-
-![alt]assets
-
-
+https://kriskris9.github.io/Code-Quiz/
