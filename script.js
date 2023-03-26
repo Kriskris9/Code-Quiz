@@ -58,7 +58,7 @@ function startQuiz() {
   timerCountdown();
   loadQuestions();
 }
-
+startQuiz();
 function loadQuestions() {
   if (questionsIndex >= questions.length) {
     finish();
