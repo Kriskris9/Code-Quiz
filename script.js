@@ -58,7 +58,7 @@ function startQuiz() {
   timerCountdown();
   loadQuestions();
 }
-startQuiz();
+document.querySelector("#button-1").addEventListener("click", startQuiz);
 function loadQuestions() {
   if (questionsIndex >= questions.length) {
     finish();
