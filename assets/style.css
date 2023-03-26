@@ -1,4 +1,3 @@
-
 * {
     margin:0;
     padding:0;
@@ -88,4 +87,28 @@ color:blue;
 .results-page input {
   color:blue;
   background-color:white;
+}
+
+#back-button {
+  text-decoration: none;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+  font-size: 50px;
+
+  
+}
+#back-button:hover {
+  cursor: grab;
+}
+
+
+#highscore-list {
+  text-align:center;
+  margin-top: 30%;
+}
+
+
+h3 {
+  font-size: 50px;
 }

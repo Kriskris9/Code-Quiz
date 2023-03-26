@@ -108,14 +108,12 @@ function ScoreSection() {
   finalScoreEl.innerText = count;
   console.log(count);
 
-  // var submitButton = document.getElementById("Submit");
-  // submitButton.addEventListener('click', function () {
-  //   var nameInitial= initials.value.trim();
-
-    
-  
-
-  });
-
+  var submitButton = document.getElementById("Submit");
+  submitButton.addEventListener('click', function () {
+    var nameInitial= initials.value.trim();
+    console.log(nameInitial);
+    localStorage.setItem('initials', nameInitial);
+  localStorage.setItem('score', count);
+  window.location.href = 'highscore.html';
+});
 }
-
